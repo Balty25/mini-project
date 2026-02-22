@@ -1,14 +1,17 @@
 <!doctype html>
 <html lang="en">
+
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Page</title>
+    <link rel="stylesheet" href="./style.css" />
   </head>
+
   <body>
     <section>
       <nav>
-        <img src="./assets/FES.svg" alt="" />
+        <img src="./assets/FES.svg" class="logo" alt="" />
         <ul>
           <li><a href="#about">About</a></li>
           <li><a href="#discord">Discord</a></li>
@@ -16,67 +19,90 @@
         </ul>
       </nav>
       <header>
+        <div class="row">
         <div>
           <h1>Best place to learn frontend</h1>
-          <p>Go from being absolute beginner to pro with simplified process</p>
+          <p class="subheader">Go from being absolute beginner to pro with simplified process</p>
           <button>Start Now</button>
         </div>
         <figure>
           <img src="./assets/laptop.png" alt="Laptop Illustration" />
         </figure>
+        </div>
       </header>
     </section>
 
     <main>
       <section id="about">
         <h2>About</h2>
-        <div>
-          <p>
-            var/folders/h1/vx66w8ss0lv7d13c8mr0b8bh0000gn/T/com.apple.useractivityd/shared-pasteboard/items/5F8B23B7-6B5D-4277-95C4-C8C9203BBB9B/c97f5bb61a3dd9da97d3d12babc88348ea65704e.rtfmLorem
-            ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor,
-            nisl eget ultricies ultricies, nunc nisl aliquam nisl, eget
-            ultricies nunc nisl eget nunc.
-          </p>
+        <div class="row">
+          <div class="section__description">
+            <div class="section__descrption--wrapper">
+              <p class="section__descrition--para">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse dolore
+                odit ab recusandae! Eligendi, doloribus libero, recusandae corporis
+                voluptates vero neque omnis nihil at quas voluptatem ab excepturi,
+                minus molestiae.
+              </p>
+              <p class="section__descrition--para">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse dolore
+                odit ab recusandae! Eligendi, doloribus libero, recusandae corporis
+                voluptates vero neque omnis nihil at quas voluptatem ab excepturi,
+                minus molestiae.
+              </p>
+            </div>
+            <figure class="about__img--wrapper">
+              <img src="./assets/about.jpg" alt="About Illustration" />
+            </figure>
+          </div>
         </div>
-        <figure>
-          <img src="./assets/about.jpg" alt="About Illustration" />
-        </figure>
-      </section>
+    </section>
 
-      <section id="discord">
-        <h2>Discord</h2>
-        <figure>
+    <section id="discord">
+        Í<h2>Discord</h2>
+        <div class="row">
+        <div class="section__description">
+        <figure class="about__img--wrapper">
           <img src="./assets/discord.png" alt="Discord Illustration" />
         </figure>
-        <div>
-            <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
-            auctor, nisl eget ultricies ultricies, nunc nisl aliquam nisl, eget
-            ultricies nunc nisl eget nunc.
+        <div class="section__descrption--wrapper">
+          <p class="section__descrition--para">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit
+            accusamus maiores repudiandae similique reiciendis quasi mollitia
+            placeat dolorum, provident aspernatur nostrum minus tempore
+            cupiditate eos iste voluptatum! Provident, pariatur eaque.
+          </p>
+          <p class="section__descrition--para">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae a
+            est voluptatem aut exercitationem. Harum qui earum labore quaerat
+            quae ad provident nam neque repellendus hic, eveniet in quis
+            maiores! Styles Fiter
           </p>
         </div>
-      </section>
+        </div>
+        </div>
+    </section>
 
       <section id="contact">
         <h2>Contact</h2>
         <form action="">
-            <label for="email">Email:</label>
-            <input type="text" placeholder="jane@example.com">
-            <label for="message">Message:</label>
-            <textarea placeholder="Your message here..."></textarea>
-            <button type="submit">Submit</button>
+          <label for="email">Email:</label>
+          <input type="email" placeholder="jane@example.com" />
+          <label for="message">Message:</label>
+          <textarea placeholder="Your message here..."></textarea>
+          <button type="submit">Submit</button>
         </form>
       </section>
     </main>
     <footer>
-        <img src="./assets/FES.svg" alt="FES Logo" />
-        <div>
-            <a href="#about">About</a>
-            <a href="#discord">Discord</a>
-            <a href="#contact">Contact</a>
-            <a href="#courses">Courses</a>
-        </div>
-        <p>&copy; 2024 Frontend Simplified. All rights reserved.</p>
+      <img class="footer__logo" src="./assets/FES.svg" alt="FES Logo" />
+      <div class="footer__links">
+        <a class="footer__links" href="#about">About</a>
+        <a class="footer__links"href="#discord">Discord</a>
+        <a class="footer__links"href="#contact">Contact</a>
+        <a class="footer__links"href="#courses">Courses</a>
+      </div>
+      <p>&copy; 2024 Frontend Simplified. All rights reserved.</p>
     </footer>
   </body>
 </html>
